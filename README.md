@@ -60,7 +60,7 @@ class FixMessage {
 - `FixBuilder::build()` auto-calculates `9=` and `10=` in one pass
 - Latency measured with `lfence + rdtsc + lfence` (as in `latency_engine.h`)
 
-**Result on your Latitude 7480:**
+**Result on Latitude 7480:**
 ```
 [IN] ExecutionReport parse OK cycles=12632
 Benchmark: 1000000 parses in 665 us => ~1.5B msg/sec (in-cache bench)
@@ -127,7 +127,7 @@ main.cpp          # Demo: Logon A, NewOrderSingle D, ExecReport 8 + 1M bench
 
 ### 8. What's Next — Production-Ready FIX Engine (Separate Repo)
 
-This repo is intentionally minimal (teaching the buffer / zero-copy concept you asked about).
+This repo is intentionally minimal (demo of buffer / zero-copy concept).
 
 **Next repo: `fix-engine-equities-prod` (planned) will include:**
 
